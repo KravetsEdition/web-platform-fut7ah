@@ -1,0 +1,600 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', sans-serif; /* Нужный шрифт для вёрстки Беру с Google Font*/
+	color: black;
+	font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 50px;
+	margin-bottom: 58px;
+}
+
+h3 {
+	font-size: 25px;
+	margin-bottom: 28px;
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	padding-top: 113px	
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+/* Сверху стандартные функции обнуление */
+
+/* CSS - Начальной страницы (head) */
+
+/* заливка фотографии и обрезка её краёв */
+.head {
+    margin: 5px 5px 5px 5px;
+	background: url('https://pictures.dealer.com/h/hubcitylafayettefordfd/0812/a01b345aa9b82a12ac612c2b655ecf31x.jpg?impolicy=downsize&w=568') no-repeat center top / cover;
+	padding-top: 50px;
+	color: #fff;
+    border-radius: 20px; /* сама обрезка краёв */
+    height: 100%;
+    padding-bottom: 9%;
+}
+/* дизайн лого (Vladislav Kravets) */
+
+.logo {
+    border-left: 3px solid white; /* Параметры линии */
+    margin-left: 30px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+    color: white;/* Цвет фона */
+    width: 150px; /* Ширина блока */
+    word-wrap: break-word; /* Перенос слов */
+    margin: 0 100px;
+    text-transform: uppercase;/* Изменение регистра текста*/
+}
+
+/* дизайн текста на странице */
+.head_text{
+    padding-top: 14.5%;
+    margin: 0 100px;
+    width: 600px;
+    color: white;
+}
+
+.gl:before,
+.gl:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: block;
+    /* Задаем ширину 100% и выбираем высоту линии, 
+    ** в нашем примере она равна 4 пикселям */
+    width: 73%;
+    height: 1px;
+    /* Добавляем цвет для линии */
+    background-color: white;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+
+/* дизайн навигационых кнопочек */
+.menu{
+    display: flex;
+    margin-left: auto;
+    margin-top: -70px;
+}
+
+.menu li a {
+    color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.nav {
+    margin-left: 500%;
+	display: flex;
+}
+
+/* дизайн кнопочек */
+.offer {
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.offer p {
+	font-size: 30px;
+	letter-spacing: 0.1em;
+}
+
+.btn1 {
+    color: white;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	border: 1px solid #fff;
+    margin-left: 100px;
+    width: 200px;
+	transition: all 0.5s ease;
+    border-radius: 20px;
+}
+
+.btn2 {
+    color: white;
+	display: block;
+	font-size: 17px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	border: 1px solid #fff;
+    margin-left: 330px;
+    margin-top: -26px;;
+    width: 220px;
+	transition: all 0.5s ease;
+    border-radius: 20px;
+ 
+}
+
+.btn:hover {
+	background: #fff;
+    color: #000;
+}
+
+/* CSS - страницы Обо мне (about) */
+
+about{
+    margin: 5px 5px 5px 5px;
+}
+.head_about{
+    border-left: 3px solid black; /* Параметры линии */
+    margin-left: 30px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+    color: black;/* Цвет фона */
+    width: 150px; /* Ширина блока */
+    word-wrap: break-word; /* Перенос слов */
+    margin: -5% 100px;
+    text-transform: uppercase;/* Изменение регистра текста*/
+}
+
+.indf:before,
+.indf:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: black;
+    position: relative;
+}
+
+.menu_about{
+    display: flex;
+    margin-left: auto;
+    margin-top: -50px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.menu_about li a {
+    color: black;
+	text-transform: uppercase;
+	font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 100px;
+}
+
+
+.nav_about {
+    margin-left: 500%;
+	display: flex;
+}
+
+.about_photo{
+    background: url('https://i.ibb.co/KWBVkrW/my-photo.jpg') no-repeat center top / cover;
+    padding-top: 400px;
+    margin: 100px 100px;
+    width: 400px;
+    border-radius: 7px;
+}
+
+.text_logo{
+    margin-left: 30px; /* Отступ слева */
+    padding-left: 10px; /* Расстояние от линии до текста */
+    color: black;/* Цвет фона */
+    width: 350px; /* Ширина блока */
+    word-wrap: break-word; /* Перенос слов */
+    margin: -80px 90px;
+}
+.text_logo h5{
+    font-size: 27px;
+}
+.text_logo h6{
+    font-size: 30px;
+}
+
+.text_logo p{
+    font-size: 15px;
+}
+
+.text_about_me{
+    margin-top: -490px;
+    margin-left: 535px; /* Отступ слева */
+    word-wrap: break-word; /* Перенос слов */
+    width: 250px;
+}
+
+.text_about_me h5{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: grey;
+}
+
+.text_educations{
+    margin-top: 50px;
+    margin-left: 535px; /* Отступ слева */
+    word-wrap: break-word; /* Перенос слов */
+    width: 400px;
+    font-size: 16px;
+}
+
+.text_educations div{
+    margin-bottom: 20px;
+}
+
+.text_educations h5{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.low_text{
+    font-size: 15px;
+    color: grey;
+}
+
+.text_work{
+    margin-top: -35.4%;
+    margin-left: 935px; /* Отступ слева */
+    word-wrap: break-word; /* Перенос слов */
+    width: 400px;
+    font-size: 16px;
+}
+.text_work div{
+    margin-bottom: 20px;
+}
+
+.text_work h5{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.low_text{
+    font-size: 15px;
+    color: grey;
+}
+
+/* -------------------- */
+
+/* Мой ВНЗ */
+
+.spec_head_text{
+    margin-top: 100px;
+    margin-left: 7.5%;
+}
+
+.spec_head_text p{
+    font-size: 16px;
+    justify-content: center;
+}
+
+.spec_head_text h5{
+    font-size: 26px;
+}
+
+.spec_photos1{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.spec_photos2{
+    margin-bottom: 100px;
+    display: flex;
+}
+
+/* Фотографии */ 
+
+.p1{
+    background: url('http://radiotex.org.ua/files/gallery/full/203_10_1586879943.jpg') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.p2{
+    background: url('http://radiotex.org.ua/files/gallery/full/203_7_1586879943.jpg') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.p3{
+    background: url('http://radiotex.org.ua/files/gallery/full/202_10_1586879419.JPG') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+.p4{
+    background: url('http://radiotex.org.ua/files/gallery/full/202_2_1586879418.JPG') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+.p5{
+    background:url('http://radiotex.org.ua/files/gallery/full/202_0_1586879418.JPG') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+.p6{
+    background: url('http://radiotex.org.ua/files/gallery/full/205_9_1586881283.JPG') no-repeat center top / cover;
+    margin-top: 0px;
+    margin-left: 100px;
+    padding-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
+/*    ----------  */
+
+/* мусор связаный с ссылками на главную страницу если нажать на лого */
+.head h4{
+    color: white;
+}
+.head_about h4{
+    color: black;
+}
+/* 404.html*/
+.error{
+    margin-top: 250px;
+    margin-left: 43%;
+}
+
+.error h1{
+    font-size: 20x;
+}
+
+
+/* Блог */
+
+.news_block{
+    margin-top: -280px;
+}
+
+.news_1{
+    width: 40%;
+    height: 400px; 
+    margin: 90px 100px;
+    margin-bottom: 200px;
+}
+
+
+#photo_news{
+    width: 500px;
+    height: 400px;
+    margin-bottom: -400px;
+}
+
+.blog_block h6{
+    font-size: 10px;
+    color: grey;
+}
+
+.blog_block h5{
+    padding-top: 75%;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.blog_block{
+    margin: 100px 200px
+    flex;
+}
+
+.blog_contacted{
+    background: url('https://i.ibb.co/KWBVkrW/my-photo.jpg') no-repeat center top / cover; 
+    width: 170px;
+    height: 170px;
+    margin-left: 60%;
+    margin-top: 150px;
+    border-radius: 5px;
+}
+
+.blog_contacted h5{
+    padding-top: 180px;
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.blog_contacted h6{
+    font-size: 10px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+
+.blog_contacted p{
+    font-size: 16px;
+    padding-bottom: 50px;
+    color: grey;
+}
+#inst{
+    color:grey;
+}
+.texts{
+    width: 500px;
+    height: 500px;
+}
+/*-----------------*/
+
+.photo_working{
+    background: url('https://www.profguide.ru/files/article/professions/programmer/professiya_programmist7.jpg') no-repeat center top / cover; 
+    margin: 100px 350px 100px 350px;
+    width: 50%;
+    height: 400px;
+    border-radius: 50px;
+}
+
+.for_working{
+    display: block;
+}
+
+.for_working h5{
+    margin-top: -90px;
+    margin-left: 26%;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    width: 700px;
+}
+
+.for_working h6{
+    margin-top: 20px;
+    margin-left: 26%;
+    font-size: 19px;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    width: 500px;
+}
+
+.for_working p{
+    margin-top: 20px;
+    margin-left: 28%;
+    font-size: 16px;
+    width: 47%
+}
+
+.ots{
+    margin-left: 50px;
+}
+
+.znamen li a{
+    font-weight: bold;
+    color: black;
+    
+}
+.znamen{
+    margin-top: 20px;
+    margin-left: 30%;
+}
+.list6a {
+    padding:0;
+    list-style: none;
+}
+.list6a li{
+    padding:6px;
+}
+.list6a li:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: black;
+    content: "\2606";
+    transition-duration: 0.5s;
+}
+.list6a li:hover:before {
+    color: gray;
+    content: "\2605";
+}
+
+.zak li{
+    margin-top: 20px;
+    margin-left: 27%;
+    font-weight: 500;
+    font-size: 18px;
+    width: 50%;
+    border-bottom: 3px solid;
+}
+
+/* Контакты */
+
+.contacted_head{
+    margin-top: 100px;
+    width: auto;
+    height: 100px;
+    padding-left: 40%;
+}
+
+.contacted_head h5{
+    font-size: 30px;
+}
+
+.fio{
+    margin-bottom: 50px;
+}
+
+.contacted_text{
+    width: auto;
+    margin-top: 50px;
+}
+
+.contacted_text p1{
+    font-size: 20px;
+}
+
+.contacted_text p{
+    margin: 20px 50px;
+    font-size: 16px;
+    width: 30%;
+    color: grey;
+    border-bottom: 3px solid grey; /* Параметры линии */
+}
+
+.flor{
+    margin-top: 28%;
+    width: auto;
+    margin-left: 0;
+    padding-top: 4%;
+    background-color: grey;
+}
+
+.flor p{
+    color:white;
+    padding-left: 45%;
+    margin-top: -30px;
+}
